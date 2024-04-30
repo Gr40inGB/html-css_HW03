@@ -1,28 +1,135 @@
+@font-face {
+    font-family: 'gilroy-bold';
+    font-style: normal;
+    font-weight: 1000;
+    src: url('fonts/gilroy/gilroy-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    font-style: normal;
+    font-weight: 1000;
+    src: url('fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+}
+
+body {
+    font-family: 'gilroy-medium';
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.button {
+    width: 135px;
+    height: 40px;
+    top: 40px;
+    bottom: -40px;
+    border-radius: 30px;
+    background: rgb(242, 88, 34);
+    /*padding: 1rem 2rem;*/
+    color: white;
+    font-size: 14px;
+    border: 2px solid rgb(242, 88, 34);
+    transition: all 0.4s;
+}
 
+.menu__button {
+    width: 120px;
+}
+
+.color__link {
+    color: rgb(242, 88, 34);;
+}
+
+.button:hover {
+    color: crimson;
+    background-color: white;
+    border: 2px solid crimson;
+}
+
+.icon__button {
+    display: flex;
+    color: rgb(242, 88, 34);
+    gap: 10px;
+    background-color: white;
+    border: none;
+    align-items: center;
+}
+/*.icon__button:hover {*/
+/*    display: flex;*/
+/*    color: rgb(242, 88, 34);*/
+/*    gap: 10px;*/
+/*    background-color: white;*/
+/*    border: none;*/
+/*    align-items: center;*/
+/*}*/
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: gilroy-medium;
+}
 
 .header {
     padding-top: 40px;
-    /*padding-left: 375px;*/
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu__bar {
-    margin-left: 483px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
 }
 
 .top__content {
-    padding-top: 162px;
+    /*padding-top: 162px;*/
+
+    display: flex;
+    gap: 40px;
 }
 
-.top__buttons{
-    padding-bottom: 103px;
+.title {
+    width: 522px;
+    height: 222px;
+    font-size: 60px;
+    font-family: gilroy-bold;
+}
+
+.subtitle {
+    width: 466px;
+    font-size: 20px;
+}
+
+.top__buttons {
+    padding-top: 37px;
+    display: flex;
+    gap: 27px;
 }
 
 .top__logos {
     padding-bottom: 97px;
     padding-top: 96px;
+    display: flex;
+    gap: 48px
+}
+
+.fa {
+    font-size: 30px;
 }
